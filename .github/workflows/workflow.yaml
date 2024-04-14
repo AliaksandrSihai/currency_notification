@@ -1,10 +1,7 @@
 name: Currency notification
 
 on:
-  workflow_dispatch:
-#  schedule:
-#    - cron: "* * * * *"
-   # - cron: "0 0 12 * * ?"
+  push:
 env:
     TELEGRAM_TOKEN: ${{ secrets.BOT_TOKEN }}
     TELEGRAM_CHANNEL_ID: ${{ secrets.GROUP_ID }}
