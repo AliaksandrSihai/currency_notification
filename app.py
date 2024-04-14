@@ -24,10 +24,10 @@ def get_currency() -> str:
 
 def send_notification(msg: str) -> None:
     token = os.getenv("BOT_TOKEN")
-    user_id = os.getenv("USER_ID")
+    group_id = os.getenv("GROUP_ID")
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     params = {
-        "chat_id": user_id,
+        "chat_id": group_id,
         "text": msg,
     }
     req = requests.post(url, params=params)
