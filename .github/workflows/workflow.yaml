@@ -2,7 +2,7 @@ name: Currency notification
 
 on:
   schedule:
-    - cron: '* 14 * * *'
+    - cron: '15 14 * * *'
 
 env:
     BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
